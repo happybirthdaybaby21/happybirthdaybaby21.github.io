@@ -1,0 +1,87 @@
+@import "styles/_variables.scss";
+
+.hero {
+    width: 100%;
+    height: 100vh;;
+    text-align: left;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#starfield{
+    // width:100vw;
+    // height:100vh;
+    overflow:hidden;
+}
+
+.personas-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxed-container {
+    margin: 0 auto;
+}
+
+header, nav, section {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: rgba(255, 255, 255, 0.016);
+    border: 1px solid grey;
+}
+
+main {
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    display: block;
+}
+
+header, nav, section {
+    display: block;
+}
+
+.bx--modal-container .bx--modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 1rem 0;
+  }
+
+  .bx--modal-header__label {
+    font-size: 1rem;
+  }
+
+  .bx--modal-header__heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .scene {
+    margin: 1rem;
+  }
+  
+
+@media screen and (min-width: $md) {
+
+    main {
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        margin: 2rem;
+    }
+}

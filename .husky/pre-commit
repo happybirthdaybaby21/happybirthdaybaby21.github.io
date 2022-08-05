@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# re-build and commit src
+npm run build
+git add "./docs"

@@ -1,0 +1,197 @@
+@import "styles/_variables.scss";
+
+
+
+/* 'silkscreen' font */
+/* author: Jason Aleksandr Kottke */
+/* //www.dafont.com/silkscreen.font */
+@font-face {font-family:"silkscreen"; src: url('https://dl.dropbox.com/s/l0frac4d7bz3zx6/silkscreen.ttf');}
+
+.intro-section {
+  align-self: center;
+  width: 80%;
+  max-width: 64rem;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+
+  p {
+      line-height: 2;
+  }
+}
+
+
+/* colors */
+:root {
+	--Speech-Bubble-Border:#222;
+	--Speech-Bubble-Background:#fcfcfc;
+	--Speech-Bubble-Text:#000;
+}
+
+.next-button {
+  align-self: center;
+  padding: 0.8rem;
+  border-radius: 40%;
+  background-color: rgb(255 255 255 / 16%);
+  color: white;
+  border-color: white;
+  margin-top: 2rem;
+}
+
+.image-container {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    max-width: 500px;
+    max-height:100%;
+    padding-bottom: 2rem;
+  }
+
+}
+
+  .typewriter p {
+    font-size: 20px;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: wrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    width: fit-content;
+  }
+
+  .animate-in p {
+    animation: 
+    typing 2.4s steps(30, end),
+    blink-caret .5s step-end infinite;
+  }
+
+  /* The typing effect */
+@keyframes typing {
+  0% { white-space: nowrap; width: 0 }
+  100% { white-space: nowrap; width: 100%; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+#bub-part-a {
+	margin-left:6px;
+	width:calc(100% - 12px);
+	height:0.4rem;
+	background:var(--Speech-Bubble-Border);
+}
+
+#bub-part-b {
+	margin-left:4px;
+	width:calc(100% - 12px);
+	height:0.64rem;
+	background:var(--Speech-Bubble-Background);
+	border-left:2px solid var(--Speech-Bubble-Border);
+	border-right:2px solid var(--Speech-Bubble-Border);
+}
+
+#bub-part-c {
+	margin-left:2px;
+	width:calc(100% - 8px);
+	height:0.64rem;
+	background:var(--Speech-Bubble-Background);
+	border-left:2px solid var(--Speech-Bubble-Border);
+	border-right:2px solid var(--Speech-Bubble-Border);
+}
+
+#speech-txt {
+	width:calc(100% - 5px);
+	padding:10px 24px;
+	font-family:silkscreen;
+	font-size: 2rem;
+	color:var(--Speech-Bubble-Text);
+	text-align:center;
+	background:var(--Speech-Bubble-Background);
+	border-left:2px solid var(--Speech-Bubble-Border);
+	border-right:2px solid var(--Speech-Bubble-Border);
+}
+
+#speech-arrow {
+	margin-top:-2px;
+	margin-left:110px;
+}
+
+#arrow-w {
+	width:8px;
+	height:8px;
+	background:var(--Speech-Bubble-Background);
+	border-left:2px solid var(--Speech-Bubble-Border);
+	border-right:2px solid var(--Speech-Bubble-Border);
+}
+
+#arrow-x {
+	width:6px;
+	height:2px;
+	background:var(--Speech-Bubble-Background);
+	border-left:2px solid var(--Speech-Bubble-Border);
+	border-right:2px solid var(--Speech-Bubble-Border);
+}
+
+#arrow-y {
+	margin-left:-2px;
+	width:6px;
+	height:2px;
+	background:var(--Speech-Bubble-Background);
+	border-left:2px solid var(--Speech-Bubble-Border);
+	border-right:2px solid var(--Speech-Bubble-Border);
+}
+
+#arrow-z {
+	margin-left:-2px;
+	width:8px;
+	height:2px;
+	background:var(--Speech-Bubble-Border);
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 80%;
+      display: block;
+    }
+
+    .row {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .typewriter p {
+      font-size: 16px;
+    }
+  }
