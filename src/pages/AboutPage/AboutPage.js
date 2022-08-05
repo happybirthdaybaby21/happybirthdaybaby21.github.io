@@ -23,7 +23,13 @@ const AboutPage = () => {
     <PageLayout>
       <div className="intro-section">
         <div className="image-container">
-          <img src={script[count].image} alt="dr umar" />
+          {script[count].type === 'video' ? (
+            <video autoPlay={true}>
+              <source src={script[count].image} type="video/mp4" />
+            </video>
+          ) : (
+            <img src={script[count].image} alt="" />
+          )}
         </div>
         <div id="speech-bubble">
           <div id="bub-part-a"></div>

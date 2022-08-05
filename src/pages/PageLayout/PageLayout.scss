@@ -11,18 +11,6 @@
     align-items: center;
 }
 
-#starfield{
-    // width:100vw;
-    // height:100vh;
-    overflow:hidden;
-}
-
-.personas-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .boxed-container {
     margin: 0 auto;
 }
@@ -52,27 +40,6 @@ main {
 header, nav, section {
     display: block;
 }
-
-.bx--modal-container .bx--modal-content {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    margin: 1rem 0;
-  }
-
-  .bx--modal-header__label {
-    font-size: 1rem;
-  }
-
-  .bx--modal-header__heading {
-    font-size: 1.6rem;
-    font-weight: 500;
-  }
-
-  .scene {
-    margin: 1rem;
-  }
-  
 
 @media screen and (min-width: $md) {
 
