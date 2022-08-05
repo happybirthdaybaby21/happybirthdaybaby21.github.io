@@ -24,6 +24,7 @@ const AboutPage = () => {
       <div className="intro-section">
         <div className="image-container">
           {script[count].type === 'video' ? (
+            // eslint-disable-next-line jsx-a11y/media-has-caption
             <video autoPlay={true}>
               <source src={script[count].image} type="video/mp4" />
             </video>
